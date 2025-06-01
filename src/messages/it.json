@@ -1,0 +1,50 @@
+{
+    "HomePage": {
+      "intro": "Ciao Sono Alessio Ragonesi",
+      "job": "Full Stack Developer",
+      "country": "Italia"
+    },
+
+    "jobs": {
+      "now": "Ora",
+      "done": "Mansioni Svolte",
+      "used": "Tecnologie Utilizzate",
+      "title": "Esperienza Lavorativa"
+    },
+
+    "skills": {
+      "title": "Competenze"
+    },
+
+    "jobs-data": {
+      "VIK": {
+        "short-description": "VIK School è un'app che si occupa di sostituire il tradizionale modo di insegnare l'educazione civica.",
+        "list": {
+          "1": "Sviluppo applicazione in React Native",
+          "2": "Creazione Dashboard docenti per gestire i bambini nella propria classe",
+          "3": "Creazione Dashboard Admin per monitorare l'andamento dell'app",
+          "4": "Creazione sistema notifiche automatico per aumentare l'engagement dei bambini",
+          "5": "Implementazione sistema di Analytics",
+          "6": "Mantenimento e sviluppo backend in Node.js + Express",
+          "7": "Gestione database PostgreSQL"
+        }
+      },
+      "otacon": {
+        "short-description": "Otacon è un'azienda di consulenza che sviluppa software interni e per clienti.",
+        "list": {
+          "1": "Creazione automatica di PDF giornalieri con dati provenienti dal mondo reale",
+          "2": "Creazione moderatore di commenti AI per il filtraggio di commenti negativi"
+        }
+      }
+    },
+    
+
+
+
+
+    "we": "Esperienza lavorativa",
+    "competenze": "Competenze",
+    "home": "Home"
+
+
+}
