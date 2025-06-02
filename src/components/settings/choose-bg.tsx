@@ -7,7 +7,7 @@ import bg2 from "@/assets/bg/2.avif";
 import Image from "next/image";
 
 export default function ChooseBg() {
-  const { availableBg, bg:currentBg, setBg, bgImage } = useContext(SettingsContext);
+  const { availableBg, bg:currentBg, setBg } = useContext(SettingsContext);
 
   const bgImages = [bg1, bg2];
 

@@ -1,9 +1,8 @@
+import { SettingsContext } from "@/contextes/settings";
+import { useContext } from "react";
+import { LiaTimesSolid } from "react-icons/lia";
 import Modal from "react-modal";
 import FadeIn from "../animations/fadeIn";
-import { FaTimes } from "react-icons/fa";
-import { LiaTimesSolid } from "react-icons/lia";
-import { useContext } from "react";
-import { SettingsContext } from "@/contextes/settings";
 
 export interface UiModalProps {
   isOpen: boolean;

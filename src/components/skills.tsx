@@ -2,9 +2,8 @@
 
 import { SkillKey, skills } from "@/assets/skillsData";
 import React, { useState } from "react";
-import FadeIn from "./animations/fadeIn";
 import { Tooltip } from "react-tooltip";
-import Color from "color";
+import FadeIn from "./animations/fadeIn";
 export interface SkillProps {
   skill: SkillKey;
   fontSize?: string;

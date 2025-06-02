@@ -1,10 +1,10 @@
 import { SkillKey } from "@/assets/skillsData";
 import Color from "color";
+import { getTranslations } from "next-intl/server";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import MainCardLayout from "../layouts/main-card-layout";
 import Skills from "../skills";
-import { getTranslations } from "next-intl/server";
 export interface WorkExperienceModalProps {
   title: string;
   image: StaticImageData;
@@ -20,7 +20,6 @@ export interface WorkExperienceModalProps {
 export default async function WorkExperienceModal({
   title,
   image,
-  description,
   url,
   startDate,
   endDate,

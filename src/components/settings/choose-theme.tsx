@@ -3,7 +3,6 @@
 import { SettingsContext, Theme as ThemeType } from "@/contextes/settings";
 import { useContext } from "react";
 import { IoSunnyOutline } from "react-icons/io5";
-import { Tooltip } from "react-tooltip";
 
 const themes: { emoji: string; name: ThemeType; isLight: boolean }[] = [
   { emoji: "🌻", name: "latte", isLight: true },

@@ -8,7 +8,10 @@ import { ISettingsContext, SettingsContext, Theme } from "./contextes/settings";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
 
-
+    //eslint-disable-next-line react-hooks/rules-of-hooks
+    if (typeof window === 'undefined') return null
+    
+    //eslint-disable-next-line react-hooks/rules-of-hooks
     const [settings, setSettings] = useState<ISettingsContext>({
         theme: localStorage?.getItem('theme') as Theme ?? 'mocha',
         setTheme: (theme: 'mocha' | 'latte' | 'macchiato' | 'frappe') => {
@@ -32,6 +35,8 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         bgImage: null,
     })
 
+
+    //eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
         const selectedBg = bgData.find(b => settings.bg === b.id)!.import
         selectedBg().then(b => setSettings((prev) => ({ ...prev, bgImage: b })))

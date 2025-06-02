@@ -10,9 +10,9 @@ export interface ISettingsContext {
     menu: 'open' | 'closed'
     setMenu: (menu: 'open' | 'closed') => void
     bg: number
-    availableBg: Array<{id: number, import: () => Promise<any>}>
+    availableBg: Array<{id: number, import: () => Promise<typeof import('*.avif')>}>
     setBg: (bg: number) => void
-    bgImage: any
+    bgImage: typeof import('*.avif') | null
 }
 
 const settings: ISettingsContext = {

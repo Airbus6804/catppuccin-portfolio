@@ -1,9 +1,8 @@
-import FadeIn from "@/components/animations/fadeIn";
+import { workExperience } from "@/assets/workExperienceData";
 import WorkExperienceCard from "@/components/jobs/work-experience-card";
 import MainCardLayout from "@/components/layouts/main-card-layout";
-import { workExperience } from "@/assets/workExperienceData";
-import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { CSSProperties } from "react";
 
 export const metadata: Metadata = {

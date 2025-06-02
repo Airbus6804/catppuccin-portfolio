@@ -20,8 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Providers>
-        <body className="bg-ctp-base overflow-hidden ">
+      <body className="bg-ctp-base overflow-hidden ">
+        <Providers>
           <ThemeProvider>
             {children}
 
@@ -35,8 +35,8 @@ export default function RootLayout({
               </div>
             </div>
           </ThemeProvider>
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }

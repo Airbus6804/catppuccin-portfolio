@@ -2,12 +2,10 @@
 
 import { SettingsContext } from "@/contextes/settings";
 import Image from "next/image";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 export default function BgImage() {
-  const { bg: bgId, availableBg, bgImage } = useContext(SettingsContext);
-
-  const [bg, setBg] = useState<any>(null);
+  const { bgImage } = useContext(SettingsContext);
 
   //   useEffect(() => {
   //     const bg = availableBg.find((bg) => bg.id === bgId)!.import;
