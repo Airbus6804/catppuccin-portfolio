@@ -62,7 +62,7 @@ export default function LanguageToggle() {
               width={20}
               height={20}
             />
-            <p className="text-sm">{lang === "it" ? "IT" : "EN"}</p>
+            <p className="text-sm hidden md:inline">{lang === "it" ? "IT" : "EN"}</p>
           </div>
         </Popover>
       </div>

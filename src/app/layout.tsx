@@ -30,7 +30,7 @@ export default function RootLayout({
               <SettingsMenu>
                 <SettingsContent />
               </SettingsMenu>
-              <div className="md:p-4 md:px-4 px-4 py-8">
+              <div className="h-10 w-10 flex items-center justify-center gap-2 p-4 md:p-2 box-content">
                 <SettingsTrigger />
               </div>
             </div>
