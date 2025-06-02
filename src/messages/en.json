@@ -1,6 +1,6 @@
 {
     "HomePage": {
-      "intro": "Hi I'm Alessio Ragonesi",
+      "intro": "Hi, I'm Alessio Ragonesi",
       "job": "Full Stack Developer",
       "country": "Italy"
     },
@@ -36,6 +36,11 @@
           "2": "Creation of an AI comment moderator for negative comments filtering"
         }
       }
+    },
+
+    "settings": {
+      "bg": "Background",
+      "theme": "Theme"
     },
 
     "we": "Work experience",

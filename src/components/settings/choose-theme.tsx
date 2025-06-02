@@ -39,13 +39,12 @@ function Theme({
 
 export default function ChooseTheme() {
   return (
-    <div className="flex flex-col gap-2">
-      <h4 className="text-xl text-ctp-text">Theme</h4>
+
       <div className="grid md:grid-cols-4 grid-cols-2  gap-4">
         {themes.map((theme) => (
           <Theme key={theme.name} theme={theme} />
         ))}
       </div>
-    </div>
+    
   );
 }

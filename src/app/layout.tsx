@@ -20,23 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-ctp-base overflow-hidden ">
-        <Providers>
-          <ThemeProvider>
-            {children}
-
-            <BgImage />
-            <div className="absolute top-0 md:left-0 right-0 z-10 ">
-              <SettingsMenu>
-                <SettingsContent />
-              </SettingsMenu>
-              <div className="h-10 w-10 flex items-center justify-center gap-2 p-4 md:p-2 box-content">
-                <SettingsTrigger />
-              </div>
-            </div>
-          </ThemeProvider>
-        </Providers>
-      </body>
+      <body className="bg-ctp-base overflow-hidden ">{children}</body>
     </html>
   );
 }

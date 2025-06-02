@@ -1,6 +1,6 @@
 {
     "HomePage": {
-      "intro": "Ciao Sono Alessio Ragonesi",
+      "intro": "Ciao, sono Alessio Ragonesi",
       "job": "Full Stack Developer",
       "country": "Italia"
     },
@@ -38,6 +38,10 @@
       }
     },
     
+    "settings": {
+      "bg": "Sfondo",
+      "theme": "Tema"
+    },
 
 
 
