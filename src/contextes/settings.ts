@@ -9,13 +9,21 @@ export interface ISettingsContext {
     setTheme: (theme: Theme) => void
     menu: 'open' | 'closed'
     setMenu: (menu: 'open' | 'closed') => void
+    bg: number
+    availableBg: Array<{id: number, import: () => Promise<any>}>
+    setBg: (bg: number) => void
+    bgImage: any
 }
 
 const settings: ISettingsContext = {
     theme: 'mocha',
     setTheme: () => {},
-    menu: 'open',
-    setMenu: () => {}
+    menu: 'closed',
+    setMenu: () => {},
+    bg: 1,
+    setBg: () => {},
+    availableBg: [],
+    bgImage: null,
 }
 
 export const SettingsContext = createContext<ISettingsContext>(settings);

@@ -1,10 +1,11 @@
 "use client"
 
+import { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
+import { bgData } from "./assets/bg/bg-data";
 import ModalSetup from "./components/modal-setup";
-import { Tooltip } from "react-tooltip";
-import { SettingsContext, ISettingsContext, Theme } from "./contextes/settings";
-import { useState } from "react";
+import { ISettingsContext, SettingsContext, Theme } from "./contextes/settings";
+
 export default function Providers({ children }: { children: React.ReactNode }) {
 
 
@@ -16,10 +17,25 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         },
         menu: 'closed',
         setMenu: (menu: 'open' | 'closed') => {
-            console.log("setMenu", menu)
             setSettings((prev) => ({ ...prev, menu }))
-        }
+        },
+        bg: Number(localStorage?.getItem('bg') ?? 1),
+        setBg: (bg: number) => {
+            localStorage.setItem('bg', bg.toString())
+            
+
+            const selectedBg = bgData.find(b => bg === b.id)!.import
+            selectedBg().then(b => setSettings((prev) => ({ ...prev, bgImage: b, bg })))
+            // setSettings((prev) => ({ ...prev, bg }))
+        },
+        availableBg: bgData,
+        bgImage: null,
     })
+
+    useEffect(() => {
+        const selectedBg = bgData.find(b => settings.bg === b.id)!.import
+        selectedBg().then(b => setSettings((prev) => ({ ...prev, bgImage: b })))
+    }, [settings.bg])
     
     return (
         <IconContext.Provider value={{ style: { color: "var(--ctp-text)", verticalAlign: "middle" } }}>
