@@ -3,18 +3,21 @@
 import { IconContext } from "react-icons";
 import ModalSetup from "./components/modal-setup";
 import { Tooltip } from "react-tooltip";
-import { SettingsContext, ISettingsContext } from "./contextes/settings";
+import { SettingsContext, ISettingsContext, Theme } from "./contextes/settings";
 import { useState } from "react";
 export default function Providers({ children }: { children: React.ReactNode }) {
 
+
     const [settings, setSettings] = useState<ISettingsContext>({
-        theme: 'mocha',
+        theme: localStorage?.getItem('theme') as Theme ?? 'mocha',
         setTheme: (theme: 'mocha' | 'latte' | 'macchiato' | 'frappe') => {
-            setSettings({ ...settings, theme })
+            localStorage.setItem('theme', theme)
+            setSettings((prev) => ({ ...prev, theme }))
         },
-        menu: 'open',
+        menu: 'closed',
         setMenu: (menu: 'open' | 'closed') => {
-            setSettings({ ...settings, menu })
+            console.log("setMenu", menu)
+            setSettings((prev) => ({ ...prev, menu }))
         }
     })
     

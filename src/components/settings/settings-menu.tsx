@@ -7,9 +7,7 @@ export default function SettingsMenu({ children }: React.PropsWithChildren) {
   const { menu, setMenu } = useContext(SettingsContext);
 
   const style = {
-    width: menu === "open" ? "30vw" : "0",
-    minWidth: menu === "open" ? "400px" : "0",
-    maxWidth: menu === "open" ? "600px" : "0",
+    transform: menu === "open" ? "translateX(0)" : "translateX(-100%)",
   };
 
   const backdropStyle = {
@@ -20,7 +18,7 @@ export default function SettingsMenu({ children }: React.PropsWithChildren) {
   return (
     <div
       style={backdropStyle}
-      className=" bg-ctp-base/10 absolute top-0 left-0 z-50"
+      className=" bg-ctp-base/10 absolute top-0 right-0 md:left-0 z-50"
       onClick={(e) => {
         if (e.target === e.currentTarget) {
           setMenu("closed");
@@ -28,10 +26,11 @@ export default function SettingsMenu({ children }: React.PropsWithChildren) {
       }}
     >
       <div
+        aria-expanded={menu === "open"}
         style={style}
-        className="absolute right-0 md:left-0 h-[100svh] w-0 transition-all duration-300 z-50"
+        className='absolute right-0 md:left-0 h-[100svh] md:[aria-expanded="true"]:translate-x-[100%] md:translate-x-[0] [aria-expanded="true"]:translate-x-[100%] translate-x-[0%] transition-transform! duration-300 isolate w-[100vw] md:w-[30vw] md:min-w-[400px] md:max-w-[600px]'
       >
-        <div className="absolute top-0 left-0 w-full h-full bg-ctp-base/90 backdrop-blur-md z-50"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-ctp-base/90 backdrop-blur-md -z-50"></div>
 
         {children}
       </div>

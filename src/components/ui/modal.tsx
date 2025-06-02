@@ -2,6 +2,9 @@ import Modal from "react-modal";
 import FadeIn from "../animations/fadeIn";
 import { FaTimes } from "react-icons/fa";
 import { LiaTimesSolid } from "react-icons/lia";
+import { useContext } from "react";
+import { SettingsContext } from "@/contextes/settings";
+
 export interface UiModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -16,14 +19,17 @@ export default function UiModal({
   onClose,
   children,
 }: UiModalChildrenProps) {
+  const { theme } = useContext(SettingsContext);
   return (
     <Modal
+      className={`${theme}`}
       isOpen={isOpen}
       onRequestClose={onClose}
       style={{
         content: {
           top: "50%",
           left: "50%",
+          position: "absolute",
           right: "auto",
           bottom: "auto",
           marginRight: "-50%",

@@ -8,27 +8,31 @@ import { useState } from "react";
 import { Popover } from "react-tiny-popover";
 import { useRouter, usePathname } from "next/navigation";
 import FadeIn from "./animations/fadeIn";
+import { useContext } from "react";
+import { SettingsContext } from "@/contextes/settings";
 export default function LanguageToggle() {
   const lang = useLocale();
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  const { theme } = useContext(SettingsContext);
+
 
   const handleLanguageChange = () => {
     const newLocale = lang === "en" ? ["/en/", "/it/"] : ["/it/", "/en/"];
-
+    
     router.push(pathname.replace(newLocale[0], newLocale[1]));
     setIsOpen(false);
   };
 
   return (
     <FadeIn>
-      <div className="h-10 w-10 flex items-center justify-center gap-2">
+      <div className={"h-10 w-10 flex items-center justify-center gap-2 "}>
         <Popover
           isOpen={isOpen}
           onClickOutside={() => setIsOpen(false)}
           content={
-            <div className="bg-ctp-base border border-ctp-overlay rounded-lg p-2 relative z-[9999] shadow-lg">
+            <div className={"bg-ctp-base border border-ctp-overlay rounded-lg p-2 relative z-[9999] shadow-lg " + theme}>
               <div
                 className="flex items-center gap-2 cursor-pointer"
                 onClick={handleLanguageChange}

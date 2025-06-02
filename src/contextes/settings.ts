@@ -1,10 +1,12 @@
-// i  need usestate in this context
+"use client"
 
 import { createContext } from "react";
 
+export type Theme = 'mocha' | 'latte' | 'macchiato' | 'frappe'
+
 export interface ISettingsContext {
-    theme: 'mocha' | 'latte' | 'macchiato' | 'frappe'
-    setTheme: (theme: 'mocha' | 'latte' | 'macchiato' | 'frappe') => void
+    theme: Theme
+    setTheme: (theme: Theme) => void
     menu: 'open' | 'closed'
     setMenu: (menu: 'open' | 'closed') => void
 }
