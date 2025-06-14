@@ -42,7 +42,7 @@ export default function Skills({ skill, fontSize = "3rem" }: SkillProps) {
       </div>
       <Tooltip
         id={`skills-tooltip-${skill}`}
-        style={{ backgroundColor: skills[skill].color.alpha(0.15).toString() }}
+        style={{ backgroundColor: skills[skill].color.alpha(0.5).toString() }}
       />
     </FadeIn>
   );
