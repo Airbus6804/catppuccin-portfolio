@@ -12,7 +12,7 @@ export default function MainCard({ children }: MainCardProps) {
         <LanguageToggle />
       </div>
       
-      <div className="h-full max-h-[100dvh]">{children}</div>
+      <div className="h-full max-h-[calc(100dvh-1px)]">{children}</div>
 
       <BottomNavigationLink />
     </div>
