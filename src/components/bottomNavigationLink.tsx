@@ -1,10 +1,9 @@
 "use client"
 
-import { routing } from "@/i18n/routing";
 import { WebsiteNavigation } from "@/types/websiteNavigation";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const links: WebsiteNavigation[] = [
     {
@@ -28,7 +27,7 @@ const links: WebsiteNavigation[] = [
 ]
 
 function NavigationLink({url, text, direction, borderLeft}: {url: string, text: string, direction: "left" | "right", borderLeft: boolean}) {
-    
+
     const t = useTranslations();
 
     return (
@@ -50,11 +49,10 @@ function NavigationLink({url, text, direction, borderLeft}: {url: string, text: 
 
 export default function BottomNavigationLink() {
 
-    let pathname = usePathname(); 
+    let pathname = usePathname();
+    const {locale} = useParams()
 
-    routing.locales.forEach(locale => {
-        pathname = pathname.replace(`/${locale}`, "");
-    });
+    pathname = pathname.replace(`/${locale}`, "");
 
     if(pathname.endsWith("/") && pathname !== "/") {
         pathname = pathname.slice(0, -1);
@@ -62,13 +60,17 @@ export default function BottomNavigationLink() {
     
     const currentLink = links.find(link => link.current === pathname);
 
+    const makeUrl = (url: string) => {
+        return `/${locale}${url}`
+    }
+
     return (
         <div className="flex justify-between">
             {currentLink?.prevUrl && currentLink?.prevText && (
-                <NavigationLink borderLeft={false} url={currentLink.prevUrl} text={currentLink.prevText} direction="left"/>
+                <NavigationLink borderLeft={false} url={makeUrl(currentLink.prevUrl)} text={currentLink.prevText} direction="left"/>
             )}
             {currentLink?.nextUrl  && currentLink?.nextText && (
-                <NavigationLink borderLeft={currentLink.prevUrl ? true : false} url={currentLink.nextUrl} text={currentLink.nextText} direction="right"/>
+                <NavigationLink borderLeft={currentLink.prevUrl ? true : false} url={makeUrl(currentLink.nextUrl)} text={currentLink.nextText} direction="right"/>
             )}
         </div>
     )
