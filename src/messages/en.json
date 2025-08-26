@@ -33,7 +33,13 @@
         "short-description": "Otacon is a consulting company that develops internal and customer software.",
         "list": {
           "1": "Creation of an automatic PDF daily report with data from the real world",
-          "2": "Creation of an AI comment moderator for negative comments filtering"
+          "2": "Creation of an AI comment moderator for negative comments filtering",
+          "3": "Development of a CRM for lead management",
+          "4": "Integration with an AI voice agent for lead sorting within the CRM",
+          "5": "Creation of automated flows with N8N",
+          "6": "Creation of a WhatsApp bot for automated responses to lead messages",
+          "7": "CRM integration with the WhatsApp bot",
+          "8": "Creation of an admin interface for client and lead management"
         }
       }
     },

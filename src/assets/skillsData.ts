@@ -16,6 +16,7 @@ import {
   SiRedux,
   SiTailwindcss,
   SiTypescript,
+  SiN8N
 } from "react-icons/si";
 class SkillData {
   constructor(
@@ -42,6 +43,7 @@ export const skills = {
   expo: new SkillData("Expo", SiExpo, Color("#f5f8ff")),
   git: new SkillData("Git", FaGit, Color("#F05032")),
   mongo: new SkillData("MongoDB", SiMongodb, Color("#4DB33D")),
+  n8n: new SkillData("n8n", SiN8N, Color("#eb4a72")),
 } as const;
 
 export type SkillKey = keyof typeof skills;

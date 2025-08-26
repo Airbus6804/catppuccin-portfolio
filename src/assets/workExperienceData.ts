@@ -57,11 +57,18 @@ export const workExperience: WorkExperienceCardProps[] = [
     description: "Otacon is a company that makes software for the automotive industry.",
     url: "https://www.otacon.it/",
     list: [
-        { text: "jobs-data.otacon.list.1", emoji: "📃​" },
-        { text: "jobs-data.otacon.list.2", emoji: "👮​" },
+        { text: "jobs-data.otacon.list.1", emoji: "📃" },
+        { text: "jobs-data.otacon.list.2", emoji: "👮" },
+        { text: "jobs-data.otacon.list.3", emoji: "🔧" },
+        { text: "jobs-data.otacon.list.4", emoji: "🤖" },
+        { text: "jobs-data.otacon.list.5", emoji: "⚙️" },
+        { text: "jobs-data.otacon.list.6", emoji: "💬" },
+        { text: "jobs-data.otacon.list.7", emoji: "🔗" },
+        { text: "jobs-data.otacon.list.8", emoji: "🧠" },
+
     ],
     color: Color("#FC380F"),
     startDate: new Date("2025-05-02"),
-    skills: ["react", "next", "typescript", "node", 'mongo', "postgresql",  "express", "redis", "git"],
+    skills: ["react", "next", "typescript", "node", 'mongo', "postgresql",  "express", "redis", "git", "n8n"],
   },
 ];
