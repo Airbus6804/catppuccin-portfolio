@@ -1,55 +1,62 @@
 {
     "HomePage": {
-      "intro": "Hi, I'm Alessio Ragonesi",
-      "job": "Full Stack Developer",
-      "country": "Italy"
+        "intro": "Hi, I'm Alessio Ragonesi",
+        "job": "Full Stack Developer",
+        "country": "Italy",
+        "company": "Ragonesi Alessio, sole proprietorship · Via Etna 1A, 01030 Vitorchiano (VT), Italy · Owner of MenuNow"
     },
-
     "jobs": {
-      "now": "Now",
-      "done": "Completed Tasks",
-      "used": "Used Technologies",
-      "title": "Work Experience"
+        "now": "Now",
+        "done": "Completed Tasks",
+        "used": "Used Technologies",
+        "title": "Work Experience"
     },
-
     "skills": {
-      "title": "Skills"
+        "title": "Skills"
     },
-
     "jobs-data": {
-      "VIK": {
-        "short-description": "VIK School is an app that replaces the traditional way of teaching civics.",
-        "list": {
-          "1": "Development of a React Native application",
-          "2": "Creation of a teacher dashboard to manage children in their class",
-          "3": "Creation of an Admin dashboard to monitor the app's progress",
-          "4": "Creation of an automatic notification system to increase children's engagement",
-          "5": "Implementation of an Analytics system",
-          "6": "Maintenance and development of the backend in Node.js + Express",
-          "7": "Database PostgreSQL management"
+        "VIK": {
+            "short-description": "VIK School is an app that replaces the traditional way of teaching civics.",
+            "list": {
+                "1": "Development of a React Native application",
+                "2": "Creation of a teacher dashboard to manage children in their class",
+                "3": "Creation of an Admin dashboard to monitor the app's progress",
+                "4": "Creation of an automatic notification system to increase children's engagement",
+                "5": "Implementation of an Analytics system",
+                "6": "Maintenance and development of the backend in Node.js + Express",
+                "7": "Database PostgreSQL management"
+            }
+        },
+        "otacon": {
+            "short-description": "Otacon is a consulting company that develops internal and customer software.",
+            "list": {
+                "1": "Creation of an automatic PDF daily report with data from the real world",
+                "2": "Creation of an AI comment moderator for negative comments filtering",
+                "3": "Development of a CRM for lead management",
+                "4": "Integration with an AI voice agent for lead sorting within the CRM",
+                "5": "Creation of automated flows with N8N",
+                "6": "Creation of a WhatsApp bot for automated responses to lead messages",
+                "7": "CRM integration with the WhatsApp bot",
+                "8": "Creation of an admin interface for client and lead management"
+            }
+        },
+        "menunow": {
+            "short-description": "MenuNow is my online menu service for restaurants: owners create and edit their menu by writing on WhatsApp, and guests open it from the QR code on the table.",
+            "list": {
+                "1": "Design and development of the service, which I run as a sole proprietorship",
+                "2": "AI agent that edits dishes, prices, sections and design from WhatsApp messages",
+                "3": "WhatsApp Cloud API integration: text, voice notes, photos and PDFs",
+                "4": "Menu websites on dedicated subdomains, with allergens and images",
+                "5": "Table QR codes and printable PDFs generated in chat",
+                "6": "Node.js + Express backend with PostgreSQL and Drizzle"
+            }
         }
-      },
-      "otacon": {
-        "short-description": "Otacon is a consulting company that develops internal and customer software.",
-        "list": {
-          "1": "Creation of an automatic PDF daily report with data from the real world",
-          "2": "Creation of an AI comment moderator for negative comments filtering",
-          "3": "Development of a CRM for lead management",
-          "4": "Integration with an AI voice agent for lead sorting within the CRM",
-          "5": "Creation of automated flows with N8N",
-          "6": "Creation of a WhatsApp bot for automated responses to lead messages",
-          "7": "CRM integration with the WhatsApp bot",
-          "8": "Creation of an admin interface for client and lead management"
-        }
-      }
     },
-
     "settings": {
-      "bg": "Background",
-      "theme": "Theme"
+        "bg": "Background",
+        "theme": "Theme"
     },
-
     "we": "Work experience",
     "competenze": "Skills",
     "home": "Home"
-  }
+}

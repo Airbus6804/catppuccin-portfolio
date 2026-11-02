@@ -1,9 +1,28 @@
 import { WorkExperienceCardProps } from "@/components/jobs/work-experience-card";
 import VikSchool from "@/assets/work-experience/vik-logo.png";
 import Otacon from "@/assets/work-experience/otacon.svg";
+import MenuNow from "@/assets/work-experience/menunow.svg";
 import Color from "color";
 
 export const workExperience: WorkExperienceCardProps[] = [
+  {
+    image: MenuNow,
+    title: "MenuNow",
+    short_description: "jobs-data.menunow.short-description",
+    description: "MenuNow is my online menu service for restaurants, managed on WhatsApp.",
+    url: "https://menunow.it/",
+    list: [
+      { text: "jobs-data.menunow.list.1", emoji: "🚀" },
+      { text: "jobs-data.menunow.list.2", emoji: "🤖" },
+      { text: "jobs-data.menunow.list.3", emoji: "💬" },
+      { text: "jobs-data.menunow.list.4", emoji: "🍝" },
+      { text: "jobs-data.menunow.list.5", emoji: "📱" },
+      { text: "jobs-data.menunow.list.6", emoji: "💾" },
+    ],
+    color: Color("#c8391c"),
+    startDate: new Date("2026-10-01"),
+    skills: ["next", "react", "typescript", "node", "express", "postgresql", "tailwind", "git"],
+  },
   {
     image: VikSchool,
     title: "VIK School",

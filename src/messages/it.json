@@ -1,60 +1,62 @@
 {
     "HomePage": {
-      "intro": "Ciao, sono Alessio Ragonesi",
-      "job": "Full Stack Developer",
-      "country": "Italia"
+        "intro": "Ciao, sono Alessio Ragonesi",
+        "job": "Full Stack Developer",
+        "country": "Italia",
+        "company": "Ragonesi Alessio, ditta individuale · Via Etna 1A, 01030 Vitorchiano (VT) · Titolare di MenuNow"
     },
-
     "jobs": {
-      "now": "Ora",
-      "done": "Mansioni Svolte",
-      "used": "Tecnologie Utilizzate",
-      "title": "Esperienza Lavorativa"
+        "now": "Ora",
+        "done": "Mansioni Svolte",
+        "used": "Tecnologie Utilizzate",
+        "title": "Esperienza Lavorativa"
     },
-
     "skills": {
-      "title": "Competenze"
+        "title": "Competenze"
     },
-
     "jobs-data": {
-      "VIK": {
-        "short-description": "VIK School è un'app che si occupa di sostituire il tradizionale modo di insegnare l'educazione civica.",
-        "list": {
-          "1": "Sviluppo applicazione in React Native",
-          "2": "Creazione Dashboard docenti per gestire i bambini nella propria classe",
-          "3": "Creazione Dashboard Admin per monitorare l'andamento dell'app",
-          "4": "Creazione sistema notifiche automatico per aumentare l'engagement dei bambini",
-          "5": "Implementazione sistema di Analytics",
-          "6": "Mantenimento e sviluppo backend in Node.js + Express",
-          "7": "Gestione database PostgreSQL"
+        "VIK": {
+            "short-description": "VIK School è un'app che si occupa di sostituire il tradizionale modo di insegnare l'educazione civica.",
+            "list": {
+                "1": "Sviluppo applicazione in React Native",
+                "2": "Creazione Dashboard docenti per gestire i bambini nella propria classe",
+                "3": "Creazione Dashboard Admin per monitorare l'andamento dell'app",
+                "4": "Creazione sistema notifiche automatico per aumentare l'engagement dei bambini",
+                "5": "Implementazione sistema di Analytics",
+                "6": "Mantenimento e sviluppo backend in Node.js + Express",
+                "7": "Gestione database PostgreSQL"
+            }
+        },
+        "otacon": {
+            "short-description": "Otacon è un'azienda di consulenza che sviluppa software interni e per clienti.",
+            "list": {
+                "1": "Creazione automatica di PDF giornalieri con dati provenienti dal mondo reale",
+                "2": "Creazione moderatore di commenti AI per il filtraggio di commenti negativi",
+                "3": "Aggiunta feature e ottimizzazione di un CRM per la gestione delle lead",
+                "4": "Integrazione con un agente vocale AI per lo smistamento delle lead all'interno del CRM",
+                "5": "Creazione di flussi automatizzati con N8N",
+                "6": "Creazione di un bot WhatsApp per la risposta automatica ai messaggi delle lead",
+                "7": "Integrazione del bot WhatsApp con il CRM",
+                "8": "Creazione di un interfaccia admin per la gestione dei clienti e delle lead"
+            }
+        },
+        "menunow": {
+            "short-description": "MenuNow è il mio servizio di menu online per ristoranti: il ristoratore crea e modifica il menu scrivendo su WhatsApp e i clienti lo aprono dal QR sul tavolo.",
+            "list": {
+                "1": "Ideazione e sviluppo del servizio, che offro come ditta individuale",
+                "2": "Agente AI che modifica pietanze, prezzi, sezioni e grafica dai messaggi WhatsApp",
+                "3": "Integrazione con WhatsApp Cloud API: testi, vocali, foto e PDF",
+                "4": "Siti dei menu su sottodomini dedicati, con allergeni e immagini",
+                "5": "QR dei tavoli e PDF stampabili generati in chat",
+                "6": "Backend in Node.js + Express con PostgreSQL e Drizzle"
+            }
         }
-      },
-      "otacon": {
-        "short-description": "Otacon è un'azienda di consulenza che sviluppa software interni e per clienti.",
-        "list": {
-          "1": "Creazione automatica di PDF giornalieri con dati provenienti dal mondo reale",
-          "2": "Creazione moderatore di commenti AI per il filtraggio di commenti negativi",
-          "3": "Aggiunta feature e ottimizzazione di un CRM per la gestione delle lead",
-          "4": "Integrazione con un agente vocale AI per lo smistamento delle lead all'interno del CRM",
-          "5": "Creazione di flussi automatizzati con N8N",
-          "6": "Creazione di un bot WhatsApp per la risposta automatica ai messaggi delle lead",
-          "7": "Integrazione del bot WhatsApp con il CRM",
-          "8": "Creazione di un interfaccia admin per la gestione dei clienti e delle lead"
-        }
-      }
     },
-    
     "settings": {
-      "bg": "Sfondo",
-      "theme": "Tema"
+        "bg": "Sfondo",
+        "theme": "Tema"
     },
-
-
-
-
     "we": "Esperienza lavorativa",
     "competenze": "Competenze",
     "home": "Home"
-
-
 }

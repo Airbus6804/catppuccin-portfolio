@@ -1,6 +1,6 @@
 import FadeIn from "@/components/animations/fadeIn";
 import { CiMail } from "react-icons/ci";
-import { FaGithub, FaLinkedin, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPhone, FaMapMarkerAlt, FaUtensils } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa6";
 import Avatar from "../../../components/avatar";
 import { getTranslations } from "next-intl/server";
@@ -38,6 +38,10 @@ export default async function MainPage() {
                     <a href="/Curriculum Ragonesi Alessio.pdf" download className="text-ctp-subtext0 text-sm flex items-center gap-2 hover:text-ctp-blue hover:underline">
                         <FaFilePdf /> <span>Curriculum</span>
                     </a>
+                    <a href="https://menunow.it" className="text-ctp-subtext0 text-sm flex items-center gap-2 hover:text-ctp-blue hover:underline">
+                        <FaUtensils /> <span>MenuNow</span>
+                    </a>
+                    <span className="text-ctp-subtext0 text-xs mt-2 max-w-sm">{t("company")}</span>
                     {/* <File name="Curriculum" icon={<FaFilePdf />} link="/Curriculum Ragonesi Alessio.pdf"/> */}
                 </div>
                 </FadeIn>   
